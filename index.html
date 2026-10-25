@@ -1,0 +1,287 @@
+index.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CréaDigital Studio | Créativité sans limites</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf7;
+      color: #20203a;
+      line-height: 1.6;
+    }
+    header {
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      background: white;
+    }
+    .logo { font-size: 22px; font-weight: 900; }
+    .logo span { color: #ed4b91; }
+    nav { display: flex; flex-wrap: wrap; gap: 16px; }
+    nav a {
+      color: #29243d;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    nav a:hover { color: #ed4b91; }
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(125deg, #ffdfeb, #e5ddff 55%, #d6f8f1);
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      background: white;
+      color: #a52c72;
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-size: clamp(36px, 6vw, 65px);
+      line-height: 1.1;
+      max-width: 850px;
+      margin: 0 auto 22px;
+    }
+    h1 span { color: #e43d88; }
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      color: #55516b;
+      font-size: 17px;
+    }
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 10px;
+      background: #e9438c;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 5px;
+    }
+    .button:hover { background: #c72e75; }
+    .button.alt {
+      background: white;
+      color: #29243d;
+      border: 1px solid #e4d7ef;
+    }
+    section { padding: 65px 7%; scroll-margin-top: 20px; }
+    .section-head { text-align: center; margin-bottom: 32px; }
+    .section-head h2 { font-size: clamp(27px, 4vw, 38px); }
+    .section-head p { color: #777187; margin-top: 8px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 25px;
+      background: white;
+      border: 1px solid #eee6f2;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px #39204b0b;
+    }
+    .emoji { font-size: 32px; margin-bottom: 12px; }
+    .card h3 { margin-bottom: 9px; }
+    .card p { color: #6d687d; font-size: 15px; }
+    .portfolio-card {
+      min-height: 190px;
+      border-radius: 18px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #29243d;
+      background: linear-gradient(140deg, #ffd0e5, #e7d8ff);
+    }
+    .portfolio-card:nth-child(2) {
+      background: linear-gradient(140deg, #c8f5e8, #cddcff);
+    }
+    .portfolio-card:nth-child(3) {
+      background: linear-gradient(140deg, #ffe5ae, #ffcde1);
+    }
+    .portfolio-card p { margin-top: 5px; }
+    .learning {
+      background: #25203e;
+      color: white;
+    }
+    .learning .section-head p { color: #d5cde9; }
+    .learning .card { color: #29243d; }
+    .about {
+      text-align: center;
+      background: #f3edff;
+    }
+    .about p { max-width: 720px; margin: auto; color: #5e5872; }
+    .contact { text-align: center; }
+    .contact p { color: #6d687d; margin: 12px 0; }
+    footer {
+      background: #201b35;
+      color: #e8e1f5;
+      padding: 25px 7%;
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding: 60px 6%; }
+      section { padding: 48px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Créa<span>Digital</span> Studio</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#formations">Formations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <img src="https://i.postimg.cc/1zvK5bLc/Whats-App-Image-2026-10-25-at-02-00-05.jpg" alt="CréaDigital Studio" style="width:100%; max-height:360px; object-fit:cover; border-radius:20px; margin:20px 0;">
+      <span class="tag">✨ CRÉATIVITÉ · COMMUNICATION · DIGITAL</span>
+      <h1>Transformons tes idées en <span>projets remarquables.</span></h1>
+      <p>
+        Bienvenue chez CréaDigital Studio ! Découvre la création de contenu,
+        la communication digitale et les stratégies pour développer ta présence en ligne.
+      </p>
+      <a class="button" href="#services">Découvrir nos services ↗</a>
+      <a class="button alt" href="#portfolio">Voir le portfolio</a>
+    </section>
+
+    <section id="services">
+      <div class="section-head">
+        <h2>Ce que nous faisons 🎯</h2>
+        <p>Des idées créatives pour faire grandir tes projets.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🎨</div>
+          <h3>Création de contenu</h3>
+          <p>Visuels, affiches, vidéos courtes et publications pour les réseaux sociaux.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">📣</div>
+          <h3>Communication digitale</h3>
+          <p>Des messages clairs et créatifs pour faire connaître une marque ou une activité.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🚀</div>
+          <h3>Marketing digital</h3>
+          <p>Des idées pour développer une audience et renforcer sa visibilité en ligne.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">📱</div>
+          <h3>Réseaux sociaux</h3>
+          <p>Organisation des publications et idées de contenu pour les pages professionnelles.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="section-head">
+        <h2>Notre univers créatif 🖼️</h2>
+        <p>Un espace pour présenter tes meilleurs projets.</p>
+      </div>
+     <div class="cards">
+  <article class="portfolio-card">
+    <img
+      src="https://i.postimg.cc/WpMsBSMK/Whats-App-Image-2026-10-25-at-01-38-57.jpg"
+      alt="Création de contenu, marketing digital et réseaux sociaux"
+      style="width:100%; height:190px; object-fit:cover; border-radius:12px; margin-bottom:12px;"
+    >
+    <h3>Identité visuelle</h3>
+    <p>Logos, couleurs et univers de marque.</p>
+  </article>
+        <article class="portfolio-card">
+  <img
+    src="https://i.postimg.cc/WpMsBSMK/Whats-App-Image-2026-10-25-at-01-38-57.jpg"
+    alt="Création de contenu, marketing digital et réseaux sociaux"
+    style="width:100%; height:190px; object-fit:cover; border-radius:12px; margin-bottom:12px;"
+  >
+  <h3>Contenus sociaux</h3>
+  <p>Publications créatives pour les réseaux.</p>
+</article>
+        <article class="portfolio-card">
+  <img
+    src="https://i.postimg.cc/WpMsBSMK/Whats-App-Image-2026-10-25-at-01-38-57.jpg"
+    alt="Création de contenu, marketing digital et réseaux sociaux"
+    style="width:100%; height:190px; object-fit:cover; border-radius:12px; margin-bottom:12px;"
+  >
+  <h3>Vidéos & montage</h3>
+  <p>Des histoires racontées en images.</p>
+</article>
+      </div>
+    </section>
+
+    <section class="learning" id="formations">
+      <div class="section-head">
+        <h2>Apprenons ensemble 📚</h2>
+        <p>Des sujets à explorer pour progresser dans le digital.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">💡</div>
+          <h3>Créer du contenu</h3>
+          <p>Découvre comment trouver des idées et préparer des publications intéressantes.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">📈</div>
+          <h3>Comprendre le marketing</h3>
+          <p>Apprends les bases de la visibilité, de l'audience et de la stratégie numérique.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🎬</div>
+          <h3>Découvrir la vidéo</h3>
+          <p>Explore les bases du montage et de la narration visuelle.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="apropos">
+      <div class="section-head">
+        <h2>Qui sommes-nous ? 💜</h2>
+      </div>
+      <p>
+        CréaDigital Studio est un projet dédié à la créativité, à la communication
+        et à l'apprentissage du numérique. Notre ambition est d'accompagner les
+        entrepreneurs, les marques et les créateurs dans leurs projets digitaux.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <h2>Un projet en tête ? 🌟</h2>
+        <p>Parlons de tes idées, de tes besoins ou de tes projets créatifs.</p>
+      </div>
+      <a class="button" href="mailto:contact@exemple.com?subject=Projet%20CréaDigital">
+        Nous contacter par e-mail
+      </a>
+      <p>Remplace l'adresse e-mail d'exemple par ta véritable adresse avant publication.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CréaDigital Studio · Créons quelque chose de remarquable.</p>
+  </footer>
+
+</body>
+</html>
